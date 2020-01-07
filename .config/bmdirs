@@ -1,0 +1,11 @@
+# You can add comments to these files with #
+h	~/
+d	~/Documenti
+D	~/Downloads
+m	~/Musica
+ii	~/Immagini
+vv	~/Video
+cf	~/.config
+sc	~/.scripts
+mn	/mnt
+ld	~/doclatex

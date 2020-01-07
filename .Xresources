@@ -1,0 +1,112 @@
+! ------------------------------!
+! .Xresources editato da Enrico !
+!				!
+! per applicare le modifiche:	!
+! xrdb ~/.Xresources		!
+! ----------------------------- !
+
+! Diasabilita la scrollbar
+URxvt.scrollBar: false
+! Per lo scrollback
+
+! do not scroll with output
+!URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+! Settiamo un font decente
+!URxvt.font: xft:System San Francisco Display Regular:size=11
+URxvt.font: xft:Inconsolata:size=13
+!URxvt.font: xft:Inconsolata:bold:size=13
+! Riduce lo spazio tra i caratteri
+URxvt.letterSpace: -1
+
+! Disable printing the terminal contents when pressing PrintScreen.
+URxvt.print-pipe: "cat > /dev/null"
+
+! Abilita le estensioni [perl !extension_name_1,extension_name_2,...]
+! La estensione metcher rende i link cliccabili con il tasto  SIN del mouse
+! tabbed abilita i tab
+! Shift+Down 	New tab
+! Shift+Left 	Go to left tab
+! Shift+Right 	Go to right tab
+! Ctrl+Left 	Move tab to the left
+! Ctrl+Right 	Move tab to the right
+! Ctrl+d 	Close tab
+
+URxvt.perl-ext-common: default,metcher,resize-font
+
+! La estensione resize-font abilita ingrandimento/riduzione dimensione font al volo
+!   Ctrl++ (or Ctrl+Shift+=) to increase size
+!   Ctrl+- to decrease size
+!   Ctrl+= to reset size
+!    Ctrl+? to see current size
+
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+! Colora i link in blu
+URxvt.matcher.rend.0: Uline Bold fg5
+
+! Per cambiare i colori dei tab
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+
+! Per la trasparenza
+urxvt*background:       rgba:0000/0000/0000/cccc
+
+URxvt.transparent:   true
+URxvt.tintColor:     white
+URxvt.shading:       20
+
+!Modifiche aggiunte il 1 gennaio 2020 per migliorare il rendering dei caratteri.
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+! ---------------------------------------------------------------------
+! speciale
+*.foreground: 	#c5c5c5
+*.background:   #1c1c1c
+*.cursorColor:  #ff00a0
+
+! black
+*.color0:       #1c1c1c
+*.color8:       #666666
+
+! red
+*.color1:       #ff005b
+*.color9:       #ff00a0
+
+! green
+*.color2:       #cee318
+*.color10:      #ccff00
+
+! yellow
+*.color3:       #ffe755
+*.color11:      #ff9f00
+
+! blue
+*.color4:       #048ac7
+*.color12:      #48c6ff
+
+! magenta
+*.color5:       #833c9f
+*.color13:      #be67e1
+
+! cyan
+*.color6:       #0ac1cd
+*.color14:      #63e7f0
+
+! white
+*.color7:       #e5e5e5
+*.color15:      #f3f3f3
+! --------------------------------------------------
